@@ -9,6 +9,7 @@ class Anagram
       element.sort!
       return true if element == self
     }
+    false
 
   end
 end
