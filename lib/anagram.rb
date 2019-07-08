@@ -6,7 +6,8 @@ class Anagram
 
   def match(array)
     array.select {|element|
-      element.chars.sort!.join
+      self.include? {|value|
+      element.chars.sort!.join}
       #return true if element == self
     }
 
