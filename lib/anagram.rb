@@ -5,5 +5,7 @@ class Anagram
   end
 
   def match(array)
+    array.each {|element|
+    }
   end
 end
