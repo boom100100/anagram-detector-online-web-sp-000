@@ -1,16 +1,15 @@
 # Your code goes here!
 
 class Anagram
+  
   def initialize(word)
+    @word = word.chars.sort!.join
   end
 
   def match(array)
     array.select {|element|
-      self.include? {|value|
-      element.chars.sort!.join}
-      #return true if element == self
+      word == element.chars.sort!.join
     }
-
-
-  end
+      #return true if element == self
+    end
 end
