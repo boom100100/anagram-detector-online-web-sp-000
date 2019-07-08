@@ -5,11 +5,11 @@ class Anagram
   end
 
   def match(array)
-    array.each {|element|
+    array.select {|element|
       element.chars.sort!.join
-      return true if element == self
+      #return true if element == self
     }
-    false
+    
 
   end
 end
