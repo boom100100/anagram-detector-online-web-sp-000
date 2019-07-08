@@ -8,7 +8,7 @@ class Anagram
 
   def match(array)
     array.select {|element|
-      word == element.chars.sort!.join
+      @word == element.chars.sort!.join
     }
       #return true if element == self
     end
